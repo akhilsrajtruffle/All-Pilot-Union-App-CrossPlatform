@@ -1,5 +1,8 @@
 
     $(window).load(function(){
+     
+       //function get json data from URL and populate data in 2nd TAB or NEW tab
+
         $.getJSON("http://www.allpilotunion.com/wp-json/wp/v2/posts", function(result){
             $.each(result, function(i, field){
                 $("#blog").append('<li><a href="#'+field.slug+'" class="item-link"><div class="item-content"><div class="item-inner"><div class="item-title">'+field.title.rendered+'</div></div> </div></a></li>');
@@ -8,7 +11,10 @@
             });    
         });
         
-        
+       
+
+     //function get json data from URL and populate data in 1st TAB or APU tab its basicaly categories of allpilotunion.com
+
     $.getJSON("http://www.allpilotunion.com/wp-json/wp/v2/categories", function(result){
             $.each(result, function(i, cat){
                 $("#front").append('<li><a href="#'+cat.slug+'" class="item-link"><div class="item-content"><div class="item-inner"><div class="item-title">'+cat.name+'</div></div> </div></a></li>');
@@ -30,7 +36,11 @@
 		  $(".item-link").show();
 		}
 		});
-    
+  
+
+
+
+  
     });
 
 
