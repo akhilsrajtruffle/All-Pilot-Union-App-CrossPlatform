@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+   <!-- Path to font awsome CDN Library-->
+      <script src="https://use.fontawesome.com/16841c61fe.js"></script>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+      <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+   
+    <!-- Views-->
+    <div class="views tabs toolbar-through">
+      <!-- Your main view, should have "view-main" class-->
+      <div id="view-1" class="view view-main tab active">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">All Pilot Union</div>
+            
+          </div>
+          <!-- Navbar inner for About page-->
+          <div data-page="about" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon fa fa-chevron-left"></i><span>Back</span></a></div>
+            <div class="center sliding">About Us</div>
+          </div>
+          
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div id="front-content" class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content pull-to-refresh-content front-cont" data-ptr-distance="65">
+                  <div class="pull-to-refresh-layer">
+    <div class="preloader"></div>
+    <div class="pull-to-refresh-arrow"></div>
+  </div>
+              
+              <div class="content-block-title"><center>Welcome Fellow Aviator!</center></div>
+              <div class="content-block">                
+            <img class="logo" src="img/Black-Logo.png">
+                
+              </div>
+              <div class="list-block">
+                <ul id="front">
+                  
+                  
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+          <!-- About Page-->
+         
+        
+        </div>
+     </div>
+	 
+	 <!-- Second view (for second wrap)-->
+      <div id="view-2" class="view view-mainn tab">
+         <!-- Top Navbar-->
+        <div class="navbar">
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">All Pilot Union</div>
+            
+          </div>
+              
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div id="blog-content" class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+              <!-- Search Bar -->
+    <form class="searchbar">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    
+    <!-- Search Bar overlay-->
+    <div class="searchbar-overlay"></div>
+            <!-- Scrollable page content-->
+            <div class="page-content pull-to-refresh-content blog-cont" data-ptr-distance="65">
+                  <div class="pull-to-refresh-layer">
+    <div class="preloader"></div>
+    <div class="pull-to-refresh-arrow"></div>
+  </div>
+             <div class="list-block">
+                <ul id="blog">
+                  
+                 
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+            
+          <!-- About Page-->
+          <div data-page="about" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <p>You may go <a href="#" class="back">back</a> </p>
+                <p>  </p>
+                </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+ <!-- Third view (for second wrap)-->     
+	 <div id="view-3" class="view tab">
+        <div class="pages">
+          <div data-page="index-3" class="page">
+            <div class="page-content  pull-to-refresh-content instafeed-content" data-ptr-distance="65">
+                 <div class="pull-to-refresh-layer">
+    <div class="preloader"></div>
+    <div class="pull-to-refresh-arrow"></div>
+  </div>
+                 
+                
+              <div class="content-block-title"><center>I Know You'll Love It</center></div>
+              <div class="content-block">
+                  
+                <div id="instafeed"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!-- Fourth view (for second wrap)-->     
+	 <div id="view-4" class="view tab">
+        <div class="pages navbar-fixed">
+          <div data-page="index-4" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Settings</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-name"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Name</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Your name">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-email"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">E-mail</div>
+                        <div class="item-input">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-url"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">URL</div>
+                        <div class="item-input">
+                          <input type="url" placeholder="URL">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-password"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Password</div>
+                        <div class="item-input">
+                          <input type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Phone</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Phone">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Birth date</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2014-04-30">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="content-block">
+                <p>Mauris commodo lacus at nisl lacinia, nec facilisis erat rhoncus. Sed eget pharetra nunc. Aenean vitae vehicula massa, sed sagittis ante. Quisque luctus nec velit dictum convallis. Nulla facilisi. Ut sed erat nisi. Donec non dolor massa. Mauris malesuada dolor velit, in suscipit leo consectetur vitae. Duis tempus ligula non eros pretium condimentum. Cras sed dolor odio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+		<!-- Bottom Tabbar-->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+		<a href="#view-1" class="tab-link active"> <i class="icon fa fa-plane"></i><span class="tabbar-label">APU</span></a>
+		<a href="#view-2" class="tab-link blog"><i class="icon fa fa-newspaper-o"></i><span class="tabbar-label">New</span></a>
+		<a href="#view-3" class="tab-link "> <i class="icon fa fa-instagram"><span class="badge bg-red">4</span></i><span class="tabbar-label">Insta Feed</span></a>
+		<a href="#view-4" class="tab-link"> <i class="icon fa fa-user"></i><span class="tabbar-label">Profile</span></a></div>
+      </div>
+      </div>
+	  
+	  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+       <script type="text/javascript" src="js/my.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+	<!-- instagram feed code-->
+      <script type="text/javascript" src="js/instafeed.min.js"></script>
+      <script type="text/javascript">
+    var feed = new Instafeed({
+    get: 'tagged',
+    tagName: 'apu',
+        resolution:'low_resolution',
+    clientId: '3dd246e14b1746968f31998c42d7cb0a',
+    accessToken: '200446713.3dd246e.95da3a967db24ebe8d6033bced72d82b',
+    template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+    });
+      
+    feed.run();
+        
+        
+        
+        
+    </script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+	
+	
+  </body>
+</html>
