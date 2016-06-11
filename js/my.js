@@ -17,7 +17,19 @@
             });
         });
             
-     
+    
+
+	  //code for search bar on 2nd tab or NEW tab...
+        $("#s").on("keyup click input", function () {
+		if (this.value.length > 0) {
+		  $(".item-link").show().filter(function () {
+			return $(this).find('.item-title').text().toLowerCase().indexOf($("#s").val().toLowerCase()) == -1;
+		  }).hide();
+		}
+		else {
+		  $(".item-link").show();
+		}
+		});
     
     });
 
