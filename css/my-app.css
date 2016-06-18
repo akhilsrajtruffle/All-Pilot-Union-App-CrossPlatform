@@ -58,7 +58,7 @@ i.tabbar-demo-icon-4 {
 
 .animation > img 
 {
-border: 3px solid gray;
+border: 1px solid #4078c0;
 border-top-left-radius: 25px;
 border-bottom-right-radius: 25px;	
 }
